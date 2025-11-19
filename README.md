@@ -25,3 +25,6 @@ TODO:
 - add search-bar 
 - develop auto-completion for search-bar 
 - ....
+
+TIP: ngOnInit -> Runs when the component + angular is setted up for that page. 
+                - useful so it doesnt run undefined error, or if the services aren't loaded
