@@ -13,3 +13,8 @@ command:
 - ng generate component name_of_component
 - ng generate component folder_name/name_of_component (this place component in x folder)
 - ng serve --open (directly opens the browser) 
+- npm start (for webserver)
+
+
+note: Cors
+we need cors since we run backend and frontend on different port, so the browser tries to protect us from accessing different domain - so we need cors to bypass it
