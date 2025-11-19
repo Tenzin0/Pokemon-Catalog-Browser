@@ -18,3 +18,9 @@ command:
 
 note: Cors
 we need cors since we run backend and frontend on different port, so the browser tries to protect us from accessing different domain - so we need cors to bypass it
+
+TODO:
+- Create the card with pokemon information
+- utlize bootstrap (column/rows) to uniformly place the cards
+- add search-bar 
+- develop auto-completion for search-bar 
