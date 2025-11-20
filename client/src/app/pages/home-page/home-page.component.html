@@ -1,1 +1,12 @@
-<p>home-page works!</p>
+<input #pokeName type="text" placeholder="Enter Pokémon name">
+<button (click)="getPokemon(pokeName.value)">Load Pokémon</button>
+
+<app-card
+  *ngIf="pokemon"
+  [name]="pokemon.name"
+  [id]="pokemon.id"
+  [type]="pokemon.types[0]?.type?.name"
+  [img]="pokemon.sprites?.front_default">
+</app-card>
+
+<p *ngIf="pokemon === null">Pokémon not found.</p>
