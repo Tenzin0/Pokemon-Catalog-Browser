@@ -21,7 +21,7 @@ we need cors since we run backend and frontend on different port, so the browser
 
 TODO:
 - Create the card with pokemon information (partialy completed, need to specify attribute)
-- utlize bootstrap (column/rows) to uniformly place the cards
+- utlize bootstrap (column/rows) to uniformly place the cards (work-in progress)
 - add search-bar 
 - develop auto-completion for search-bar 
 - ....
