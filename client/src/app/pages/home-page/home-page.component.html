@@ -1,12 +1,10 @@
-<input #pokeName type="text" placeholder="Enter Pokémon name">
-<button (click)="getPokemon(pokeName.value)">Load Pokémon</button>
+<p *ngIf="isLoadingAll">Loading Pokémon...</p>
 
-<app-card
-  *ngIf="pokemon"
-  [name]="pokemon.name"
-  [id]="pokemon.id"
-  [type]="pokemon.types[0]?.type?.name"
-  [img]="pokemon.sprites?.front_default">
-</app-card>
-
-<p *ngIf="pokemon === null">Pokémon not found.</p>
+@for (p of ALL_POKEMON_LIST; track p.id) {
+  <app-card
+    [name]="p.name"
+    [id]="p.id"
+    [type]="p.types[0].type.name"
+    [img]="p.sprites.front_default">
+  </app-card>
+}
